@@ -1,14 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" >
+
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Tarjeta de credito</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2622dc0745.js" crossorigin="anonymous"></script>
+
   </head>
+
   <body>
-    <header></header>
-    <main>Hola mundo</main>
-    <footer></footer>
+    <header  class="header">
+      <nav class="nav">
+        <img src="./img/logo2.png" height="50px" width="70px"  alt="logo">
+        <ul class="menu">
+          <li>
+            <a href="#paginaInicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#paginaNosotros">Nosotros</a>
+          </li>
+          <li>
+            <a href="#paginaSuscripcion">Suscribirse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="paginaInicio" class="inicio">
+        <div class="container">
+          <div class="titulo">
+            <h1>Libros de Terror y Suspenso</h1>
+          </div>
+          <div class="tituloImagen">
+            <img src="./img/img1.jpg" width="580px" height="404px" alt="libros">
+          </div>
+        </div>
+      </section>
+
+      <section id="paginaNosotros" class="nosotros">
+        <article class="primero">
+          <h3>Nosotros</h3>
+          <p> Te gusta leer y mas si es de terror y suspenso tenemos lo que buscas 
+            con solo suscribirse puede tener acceso a todos los libros para que tus 
+            momentos de descanso puedas entretenerte.</p>
+        </article>
+        <article class="segundo">
+          <h3>Nosotros</h3>
+          <p> Te gusta leer y mas si es de terror y suspenso tenemos lo que buscas 
+            con solo suscribirse puede tener acceso a todos los libros para que tus 
+            momentos de descanso puedas entretenerte.</p>
+        </article>
+        <article class="tercero">
+          <h3>Nosotros</h3>
+          <p> Te gusta leer y mas si es de terror y suspenso tenemos lo que buscas 
+            con solo suscribirse puede tener acceso a todos los libros para que tus 
+            momentos de descanso puedas entretenerte.</p>
+        </article>
+      </section>
+
+      <section id="paginaSuscripcion" class="card">
+        <div>
+          <h2 class="titleCard">Suscribirse</h2>
+          <p class="intro">Por favor ingresa el número de 16 dígitos de tu tarjeta </p>
+        </div>
+        <div id="Card">
+          <input type="text" maxlength="16" placeholder="Ingresar numero" id="numberCard"
+            onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required />
+          <button type="button" class="btnAll" id="btnAll">Válidar</button>
+        </div>
+        <div id="result">
+          <!-- Resultado Valido o no -->
+          
+        </div>
+        <div id="bttRetVal">
+          <button type="button" class="btnAll" id="btnRetun" onclick="location.reload();">Volver a validar</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="barra-footer">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="barra-footer2">
+        &copy;
+        Derechos Reservados - 2022
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
