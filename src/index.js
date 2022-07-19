@@ -11,6 +11,9 @@ document.getElementById("btnAll").addEventListener("click", function () {
   let textR = "";
   /* Validar*/
 
+  if (cardNumber == null || cardNumber == ""){
+    alert("ingresa los datos")
+  }
   let newNumber = validator.isValid(cardNumber);
   if (newNumber === true) {
     textR = "es valida!";
