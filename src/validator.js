@@ -8,8 +8,6 @@ const validator = {
       if (i % 2 !== 0) {
         // i = separa las posicies pares
         let numPair = e * 2;
-        console.log(reverseCredit)
-        console.log(numPair)
         // e = multiplica por 2 los valores de las posiciones i
         if (numPair >= 10) {
           total.push(
