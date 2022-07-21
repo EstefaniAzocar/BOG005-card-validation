@@ -10,7 +10,6 @@ document.getElementById("btnAll").addEventListener("click", function () {
   let btnRetVal = document.getElementById("bttRetVal");
   let textR = "";
   /* Validar*/
-
   if (cardNumber == null || cardNumber == ""){
     alert("ingresa los datos")
   }
